@@ -1,0 +1,14 @@
+{
+  "name": "timiyoungdata",
+  "version": "1.0.0",
+  "description": "data website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss Stylesheet/TimiyoungData.css -w"
+  },
+  "author": "samuel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

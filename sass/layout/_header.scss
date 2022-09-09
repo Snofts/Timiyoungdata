@@ -1,0 +1,145 @@
+.header{
+    background-image: linear-gradient($color-primary-light,$color-primary-light), url(Images/p.jpg);
+    height: 96.5vh;
+    background-size: cover;
+    overflow: hidden;
+
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 70px;
+        padding: 4rem 15rem 4rem 15rem;
+    }
+
+    &-sticky-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color-primary;
+        z-index: 4;
+
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 90px;
+
+        padding: 3rem 15rem 4rem 15rem;
+
+    }
+
+    &-sticky-menu{
+        color: $color-black;
+    }
+
+
+    &-list{
+        display: flex;
+        list-style: none;
+        font-size: 1.8rem;
+
+    }
+
+    &-logo{
+        font-size: 2.8rem;
+        margin-top: -1rem;
+
+        & a{
+            text-decoration: none;
+            color: $color-yellow-dark;
+        }
+    }
+
+    & li a{
+        text-decoration: none;
+
+    }
+
+    &-menu{
+        color: $color-white;
+    }
+
+    & li:not(:last-child){
+        margin-right: 3rem;
+    }
+
+
+    &-btn:hover,
+    &-btn:active{
+        color: $color-white;
+        background-color: transparent;
+        border: 0.2rem solid $color-white;
+        padding-left: 3.8rem;
+        padding-right: 3.8rem;
+    }
+
+    &-2{
+        display: flex;
+        margin-top: 3.5rem;
+        margin-left: 15rem;
+        margin-right: 7rem;
+        height: 76vh;
+        align-items: center;
+
+        &-1{
+            width: 50%;
+            animation-name: moveInRight;
+            animation-duration: 5s;
+        }
+
+        &-descrip{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+
+            &-1{
+                font-size: 2.5rem;
+                color: $color-yellow-dark;
+                text-transform: uppercase;
+            }
+
+            &-2{
+                font-size: 4rem;
+                color: $color-white;
+            }
+
+            &-3{
+                color: $color-white;
+                font-size: 2.5rem;
+            }
+
+            &-link{
+                text-decoration: none;
+                color: $color-yellow-dark;
+                text-transform: uppercase;
+            }
+        }
+
+        &-img{
+            height: 100%;
+            overflow: fill;
+
+            animation-name: moveInLeft;
+            animation-duration: 5s;
+        }
+
+        &-item{
+            width: 100%;
+        }
+
+        &-logo{
+            display: flex;
+            align-items: center;
+            padding-right: 3rem;
+        }
+
+        &-logo-gp{
+            width: 30%;
+        }
+
+    }
+
+}

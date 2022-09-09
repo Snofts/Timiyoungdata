@@ -1,0 +1,76 @@
+.section10{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 15rem 5rem 15rem;
+
+
+    &-1{
+        width: 35%;
+        color: $color-primary-light;
+        height: 50%;
+
+        &-h1{
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        &-p{
+            font-size: 2.2rem;
+        }
+    }
+
+    &-2{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+
+        &-1 h1,
+        &-2 h1,
+        &-3 h1{
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        &-1 ul,
+        &-2 ul,
+        &-3 ul{
+            font-size: 1.8rem;
+            color: $color-primary-light
+        }
+
+        &-list li:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+
+        &-1{
+            width: 25%;
+        }
+
+        &-1 ul,
+        &-2 ul{
+            list-style: none;
+        }
+
+        &-2{
+            width: 25%;
+        }
+
+
+        &-3{
+            width: 35%;
+        }
+
+        &-link:link,
+        &-link:active{
+            text-decoration: none;
+            color: $color-primary-light;
+        }
+
+        &-link:hover,
+        &-link:visited{
+            box-shadow: 0rem 1rem 1rem rgba($color-black,0.5);
+            font-size: 2rem;
+        }
+    }
+}

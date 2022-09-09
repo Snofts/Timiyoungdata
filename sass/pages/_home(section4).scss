@@ -1,0 +1,40 @@
+.section4{
+    display: flex;
+    padding: 5rem 11rem 0rem 15rem;
+
+    &-img{
+        width: 50%;
+        padding-right: 4.1rem;
+
+        animation-name: moveInRight;
+        animation-duration: 2s;
+
+        &-item{
+            width: 95%;
+        }
+    }
+
+    &-word{
+        width: 50%;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+
+        &-1{
+            font-size: 2rem;
+            color: $color-primary-light;
+            padding-bottom: 5rem;
+        }
+
+        &-2{
+            font-size: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        &-3{
+            font-size: 2rem;
+            line-height: 3rem;
+            color: $color-primary-light;
+        }
+
+    }
+}

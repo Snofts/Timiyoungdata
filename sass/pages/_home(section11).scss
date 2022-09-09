@@ -1,0 +1,15 @@
+.section11{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1rem solid grey;
+    margin: 5rem 15rem 5rem 15rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    color: $color-primary-light;
+
+    &-2{
+        text-transform: uppercase;
+    }
+
+}
