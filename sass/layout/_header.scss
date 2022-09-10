@@ -4,12 +4,22 @@
     background-size: cover;
     overflow: hidden;
 
+    @include respond(big-phone) {
+        height: 99vh;
+    }
+
     &-nav{
         display: flex;
         justify-content: space-between;
         align-content: center;
-        height: 70px;
-        padding: 4rem 15rem 4rem 15rem;
+        height: 7rem;
+        margin: 4rem 15rem 4rem 15rem;
+
+        @include respond(big-phone) {
+            flex-direction: column;
+            align-items: center;
+            margin: 4rem 2rem 1rem 2rem;
+        }
     }
 
     &-sticky-nav{
@@ -82,10 +92,22 @@
         height: 76vh;
         align-items: center;
 
+        @include respond(big-phone) {
+            flex-direction: column;
+            align-items: center;
+            height: 75vh;
+            margin-left: 8rem;
+        }
+
         &-1{
             width: 50%;
             animation-name: moveInRight;
             animation-duration: 5s;
+
+
+            @include respond(big-phone) {
+                width: 80%;
+            }
         }
 
         &-descrip{
@@ -128,6 +150,13 @@
 
         &-item{
             width: 100%;
+            
+            @include respond(big-phone) {
+                width: 70%;
+                align-self: center;
+                margin-top: 2rem;
+                margin-left: 10rem;
+            }
         }
 
         &-logo{

@@ -1,6 +1,10 @@
 .section5{
     padding-top: 8rem;
 
+    @include respond(big-phone) {
+       height: 150rem;
+      }
+
     &-word{
         text-align: center;
 
@@ -8,11 +12,19 @@
             font-size: 5rem;
             text-transform: uppercase;
             padding-bottom: 2rem;
+
+            @include respond(big-phone) {
+                font-size: 3.5rem;
+              }
         }
 
         &-2{
             font-size: 2rem;
             line-height: 3rem;
+
+            @include respond(big-phone) {
+                font-size: 2.2rem;
+              }
         }
 
     }
@@ -21,6 +33,12 @@
         display: flex;
         padding: 10rem 15rem 0rem 12rem;
         height: 47rem;
+
+        @include respond(big-phone) {
+            flex-direction: column;
+            height: 100rem;
+            padding: 10rem 6rem 0rem 6rem;
+          }
     }
 
     &-figure1{
@@ -31,6 +49,10 @@
         &-1{
             display: flex;
             align-items: flex-start;
+
+            @include respond(big-phone) {
+                flex-direction: column;
+              }
 
             & img{
                 width: 17%;
@@ -93,9 +115,18 @@
         justify-content: space-between;
         width: 109rem;
 
+        @include respond(big-phone) {
+            width: 100%;
+          }
+
         &-2{
             display: flex;
             align-items: flex-start;
+
+            @include respond(big-phone) {
+                flex-direction: column;
+                align-items: center;
+              }
 
             & img{
                 width: 18%;

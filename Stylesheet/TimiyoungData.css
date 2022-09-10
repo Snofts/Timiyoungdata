@@ -63,7 +63,7 @@ html {
       font-size: 35%; } }
   @media (max-width: 26.56em) {
     html {
-      font-size: 20%; } }
+      font-size: 35%; } }
   @media (max-width: 23.4em) {
     html {
       font-size: 50%; } }
@@ -104,12 +104,20 @@ body {
   height: 96.5vh;
   background-size: cover;
   overflow: hidden; }
+  @media (max-width: 26.56em) {
+    .header {
+      height: 99vh; } }
   .header-nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    height: 70px;
-    padding: 4rem 15rem 4rem 15rem; }
+    height: 7rem;
+    margin: 4rem 15rem 4rem 15rem; }
+    @media (max-width: 26.56em) {
+      .header-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 2rem 1rem 2rem; } }
   .header-sticky-nav {
     position: fixed;
     top: 0;
@@ -153,10 +161,19 @@ body {
     margin-right: 7rem;
     height: 76vh;
     align-items: center; }
+    @media (max-width: 26.56em) {
+      .header-2 {
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+        margin-left: 8rem; } }
     .header-2-1 {
       width: 50%;
       animation-name: moveInRight;
       animation-duration: 5s; }
+      @media (max-width: 26.56em) {
+        .header-2-1 {
+          width: 80%; } }
     .header-2-descrip {
       display: flex;
       flex-direction: column;
@@ -184,6 +201,12 @@ body {
       animation-duration: 5s; }
     .header-2-item {
       width: 100%; }
+      @media (max-width: 26.56em) {
+        .header-2-item {
+          width: 70%;
+          align-self: center;
+          margin-top: 2rem;
+          margin-left: 10rem; } }
     .header-2-logo {
       display: flex;
       align-items: center;
@@ -199,6 +222,9 @@ body {
   margin-top: 7rem;
   height: 40rem;
   margin-bottom: 4rem; }
+  @media (max-width: 26.56em) {
+    .section1 {
+      height: 150rem; } }
   .section1-word {
     display: flex;
     justify-content: space-between;
@@ -211,21 +237,37 @@ body {
     color: rgba(0, 128, 0, 0.781);
     font-size: 2.2rem;
     text-align: center; }
+    @media (max-width: 26.56em) {
+      .section1-para {
+        font-size: 2.5rem; } }
   .section1-img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 70%; }
+    @media (max-width: 26.56em) {
+      .section1-img {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 120rem; } }
     .section1-img-fig {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 20%; }
+      @media (max-width: 26.56em) {
+        .section1-img-fig {
+          width: 40%; } }
       .section1-img-fig p {
         font-size: 2rem;
         width: 100%;
         text-align: center;
         padding-top: 10%; }
+        @media (max-width: 26.56em) {
+          .section1-img-fig p {
+            font-size: 4rem; } }
     .section1-img-fig1 {
       animation-name: moveInBottom;
       animation-duration: 2s; }
@@ -246,10 +288,19 @@ body {
   display: flex;
   height: 77rem;
   padding: 10rem 12rem 5rem 12rem; }
+  @media (max-width: 26.56em) {
+    .section2 {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 160rem;
+      padding: 8rem; } }
   .section2-img {
     width: 50%;
     animation-name: moveInRight;
     animation-duration: 2s; }
+    @media (max-width: 26.56em) {
+      .section2-img {
+        width: 100%; } }
     .section2-img-item {
       width: 100%;
       height: 75rem; }
@@ -259,6 +310,9 @@ body {
     width: 50%;
     animation-name: moveInLeft;
     animation-duration: 2s; }
+    @media (max-width: 26.56em) {
+      .section2-word {
+        width: 100%; } }
     .section2-word-1 {
       color: rgba(0, 128, 0, 0.781);
       font-size: 2.5rem;
@@ -270,6 +324,9 @@ body {
     .section2-word-3, .section2-word-4 {
       font-size: 2.5rem;
       color: rgba(0, 128, 0, 0.781); }
+      @media (max-width: 26.56em) {
+        .section2-word-3, .section2-word-4 {
+          font-size: 3rem; } }
     .section2-word-3 {
       padding-bottom: 2rem; }
 
@@ -279,23 +336,41 @@ body {
   justify-content: space-between;
   animation-name: moveInRight;
   animation-duration: 2s; }
+  @media (max-width: 26.56em) {
+    .section3 {
+      flex-direction: column-reverse;
+      margin: 8rem 6rem 0rem 6rem; } }
   .section3-word {
     padding-top: 6rem;
     padding-right: 4.1rem;
     width: 50%; }
+    @media (max-width: 26.56em) {
+      .section3-word {
+        width: 100%;
+        padding-right: 0rem; } }
     .section3-word-1 {
       color: rgba(0, 128, 0, 0.781);
       font-size: 2rem;
       padding-bottom: 3rem; }
+      @media (max-width: 26.56em) {
+        .section3-word-1 {
+          font-size: 3rem; } }
     .section3-word-2 {
       font-size: 5rem;
       padding-bottom: 3rem; }
+      @media (max-width: 26.56em) {
+        .section3-word-2 {
+          font-size: 5rem; } }
     .section3-word-3 {
       padding-bottom: 3rem; }
     .section3-word-3, .section3-word-4 {
       color: rgba(0, 128, 0, 0.781);
       font-size: 2.1rem;
       line-height: 2.7rem; }
+      @media (max-width: 26.56em) {
+        .section3-word-3, .section3-word-4 {
+          font-size: 3rem;
+          line-height: 3.2rem; } }
   .section3-img {
     animation-name: moveInLeftB;
     animation-duration: 2s; }
@@ -305,44 +380,82 @@ body {
 .section4 {
   display: flex;
   padding: 5rem 11rem 0rem 15rem; }
+  @media (max-width: 26.56em) {
+    .section4 {
+      flex-direction: column;
+      padding: 5rem 6rem 0rem 6rem; } }
   .section4-img {
     width: 50%;
     padding-right: 4.1rem;
     animation-name: moveInRight;
     animation-duration: 2s; }
+    @media (max-width: 26.56em) {
+      .section4-img {
+        width: 100%;
+        padding-right: 0rem;
+        align-items: center;
+        padding-bottom: 5rem; } }
     .section4-img-item {
       width: 95%; }
   .section4-word {
     width: 50%;
     animation-name: moveInLeft;
     animation-duration: 2s; }
+    @media (max-width: 26.56em) {
+      .section4-word {
+        width: 100%; } }
     .section4-word-1 {
       font-size: 2rem;
       color: rgba(0, 128, 0, 0.781);
       padding-bottom: 5rem; }
+      @media (max-width: 26.56em) {
+        .section4-word-1 {
+          font-size: 3rem;
+          padding-bottom: 2rem; } }
     .section4-word-2 {
       font-size: 5rem;
       padding-bottom: 5rem; }
+      @media (max-width: 26.56em) {
+        .section4-word-2 {
+          padding-bottom: 2rem; } }
     .section4-word-3 {
       font-size: 2rem;
       line-height: 3rem;
       color: rgba(0, 128, 0, 0.781); }
+      @media (max-width: 26.56em) {
+        .section4-word-3 {
+          font-size: 3rem;
+          line-height: 4.5rem; } }
 
 .section5 {
   padding-top: 8rem; }
+  @media (max-width: 26.56em) {
+    .section5 {
+      height: 150rem; } }
   .section5-word {
     text-align: center; }
     .section5-word-1 {
       font-size: 5rem;
       text-transform: uppercase;
       padding-bottom: 2rem; }
+      @media (max-width: 26.56em) {
+        .section5-word-1 {
+          font-size: 3.5rem; } }
     .section5-word-2 {
       font-size: 2rem;
       line-height: 3rem; }
+      @media (max-width: 26.56em) {
+        .section5-word-2 {
+          font-size: 2.2rem; } }
   .section5-figure {
     display: flex;
     padding: 10rem 15rem 0rem 12rem;
     height: 47rem; }
+    @media (max-width: 26.56em) {
+      .section5-figure {
+        flex-direction: column;
+        height: 100rem;
+        padding: 10rem 6rem 0rem 6rem; } }
   .section5-figure1 {
     display: flex;
     flex-direction: column;
@@ -350,6 +463,9 @@ body {
     .section5-figure1-1 {
       display: flex;
       align-items: flex-start; }
+      @media (max-width: 26.56em) {
+        .section5-figure1-1 {
+          flex-direction: column; } }
       .section5-figure1-1 img {
         width: 17%;
         padding-right: 3rem; }
@@ -388,9 +504,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 109rem; }
+    @media (max-width: 26.56em) {
+      .section5-figure2 {
+        width: 100%; } }
     .section5-figure2-2 {
       display: flex;
       align-items: flex-start; }
+      @media (max-width: 26.56em) {
+        .section5-figure2-2 {
+          flex-direction: column;
+          align-items: center; } }
       .section5-figure2-2 img {
         width: 18%;
         padding-right: 3rem; }
@@ -500,7 +623,7 @@ body {
     position: absolute;
     z-index: 2;
     width: 30%;
-    height: 100%;
+    height: 60rem;
     background-color: #fff; }
     .section8-1-h1 {
       font-size: 2rem;
