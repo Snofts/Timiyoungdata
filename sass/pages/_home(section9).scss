@@ -1,0 +1,150 @@
+.section9{
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include respond(big-phone) {
+        height: 220rem;
+      }
+
+      @include respond(medium-phone) {
+        height: 250rem;
+    }
+
+    &-h1 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-primary-light;
+        margin-bottom: 3rem;
+    }
+
+    &-h2{
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+
+    &-card{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10rem;
+
+        @include respond(big-phone) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 10rem;
+            height: 200rem;
+          }
+
+          @include respond(medium-phone) {
+            height: 220rem;
+        }
+
+        &-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color-white;
+            width: 18%;
+            box-shadow: 1rem 1rem 3rem rgba($color-black, 0.5);
+            padding-top: 2rem;
+            margin-left: 5rem;
+            padding-bottom: 3rem;
+
+            @include respond(big-phone) {
+                width: 60%;
+                margin-left: 0rem;
+              }
+        }
+
+
+        &-logo{
+
+            @include respond(big-phone) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+
+              @include respond(tablet) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+        &-logo img{
+            width: 80%;
+            margin-bottom: 1rem;
+
+            @include respond(big-phone) {
+                width: 60%;
+                align-self: center;
+              }
+
+              @include respond(tablet) {
+                width: 60%;
+            }
+        }
+
+        &-header{
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+
+            @include respond(big-phone) {
+                font-size: 2.5rem;
+              }
+        }
+
+        &-table{
+            font-size: 1.5rem;
+            width: 90%;
+            border-top: 0.1rem solid gray;
+            padding-top: 1rem;
+
+            @include respond(big-phone) {
+                font-size: 2rem;
+              }
+        }
+
+        &-table1{
+            display: flex;
+            align-content: space-around;
+        }
+
+        &-tablelist{
+            padding:0.5rem;
+            text-align: center;
+        }
+
+        &-tablelist3{
+            display: flex;
+        }
+
+        &-btn{
+            margin-top: 3rem;
+            font-size: 2rem;
+
+            @include respond(big-phone) {
+                font-size: 3rem;
+              }
+        }
+
+        &-btn a:link,
+        &-btn a:active{
+            text-decoration: none;
+        }
+
+        &-btn a:hover,
+        &-btn a:visited{
+            text-decoration: none;
+            background-color: $color-primary-light;
+        }
+    }
+    
+}

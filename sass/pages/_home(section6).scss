@@ -1,0 +1,117 @@
+.section6{
+    display: flex;
+    margin: 10rem 8rem 0rem 8rem;
+    justify-content: space-around;
+
+    @include respond(big-phone) {
+        flex-direction: column;
+        align-items: center;
+        height: 70rem;
+      }
+
+    &-word1{
+        width: 42%;
+        padding: 0rem 4rem 0rem 4rem;
+
+        @include respond(big-phone) {
+            width: 100%;
+            padding: 0rem;
+          }
+
+        &-1{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: $color-primary-light;
+
+            @include respond(big-phone) {
+                font-size: 3rem;
+              }
+        }
+
+        &-2{
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &-3{
+            font-size: 2rem;
+            color: $color-primary-light;
+
+            @include respond(big-phone) {
+                font-size: 3rem;
+              }
+        }
+    }
+
+    &-word2{
+        width: 70%;
+        list-style: none;
+        font-size: 2.5rem;
+
+        @include respond(big-phone) {
+            width: 100%;
+          }
+
+        & li a{
+            text-decoration: none;
+            color: $color-black;
+        } 
+
+        &-1{
+            display: flex;
+            flex-direction: column;
+        }
+
+       &-11{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-12,
+        &-13{
+            margin-left: 2rem;
+            font-size: 2rem;
+            display: none;
+        }
+
+        &-13 li{
+            list-style: none;
+        }
+
+        &-1:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-box{
+        display: none;
+    }
+
+    &-icon{
+        &,
+        &::before{
+            display: inline-block;
+            width: 1.5rem;
+            height: 3px;
+            background-color: $color-black;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            margin-top: 0rem;
+            transform: rotate(90deg);
+        }
+    }
+
+    &-box:checked  + &-box-toggle &-icon::before{
+        display: none;
+    }
+
+   /*&-box:checked  + &-word2-12 {
+        display: visible;
+    }*/
+}

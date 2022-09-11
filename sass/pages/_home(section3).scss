@@ -1,0 +1,76 @@
+.section3{
+    margin: 17rem 11rem 0rem 15rem ;
+    display: flex;
+    justify-content: space-between;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+
+    @include respond(big-phone) {
+        flex-direction: column-reverse;
+        margin: 8rem 6rem 0rem 6rem ;
+    }
+
+    &-word{
+        padding-top: 6rem;
+        padding-right: 4.1rem;
+        width: 50%;
+
+        @include respond(big-phone) {
+            width: 100%;
+            padding-right: 0rem;
+        }
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+
+        &-1{
+            color: $color-primary-light;
+            font-size: 2rem;
+            padding-bottom: 3rem;
+
+            @include respond(big-phone) {
+                font-size: 3rem;
+            }
+    
+        }
+    
+        &-2{
+            font-size: 5rem;
+            padding-bottom: 3rem;
+
+            @include respond(big-phone) {
+                font-size: 5rem;
+            }
+        }
+
+        &-3{
+            padding-bottom: 3rem;
+        }
+    
+        &-3,
+        &-4{
+            color: $color-primary-light;
+            font-size: 2.1rem;
+            line-height: 2.7rem;
+
+            @include respond(big-phone) {
+                font-size: 3rem;
+                line-height: 3.2rem;
+             }
+        }
+
+    }
+
+
+    &-img{
+        animation-name: moveInLeftB;
+        animation-duration: 2s;
+
+
+        &-item{
+            width: 100%;
+        }
+    }
+    
+}
