@@ -1,20 +1,20 @@
 .section6{
     display: flex;
-    margin: 10rem 8rem 0rem 8rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
     justify-content: space-around;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         flex-direction: column;
         align-items: center;
         height: 70rem;
       }
 
     &-word1{
-        width: 42%;
-        padding: 0rem 4rem 0rem 4rem;
+        width: 30%;
 
-        @include respond(big-phone) {
-            width: 100%;
+        @include respond(small-tablet) {
+            width: 80%;
             padding: 0rem;
           }
 
@@ -23,7 +23,7 @@
             margin-bottom: 2rem;
             color: $color-primary-light;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
               }
         }
@@ -37,19 +37,19 @@
             font-size: 2rem;
             color: $color-primary-light;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
               }
         }
     }
 
     &-word2{
-        width: 70%;
+        width: 50%;
         list-style: none;
         font-size: 2.5rem;
 
-        @include respond(big-phone) {
-            width: 100%;
+        @include respond(small-tablet) {
+            width: 80%;
           }
 
         & li a{

@@ -7,7 +7,7 @@
     height: 40rem;
     margin-bottom: 4rem;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         height: 150rem;
     }
     
@@ -22,10 +22,6 @@
 
     &-head{
         font-size: 5.5rem;
-
-        @include respond(big-phone) {
-            //font-size: ;
-         }
     }
 
     &-para{
@@ -33,7 +29,7 @@
         font-size: 2.2rem;
         text-align: center;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             font-size: 2.5rem;
          }
     }
@@ -44,7 +40,7 @@
         justify-content: space-between;
         width: 70%;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
@@ -58,7 +54,7 @@
             align-items: center;
             width: 20%;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                width: 40%;
             }
 
@@ -66,9 +62,9 @@
                 font-size: 2rem;
                 width: 100%;
                 text-align: center;
-                padding-top: 10%;
+                padding-top: 1rem;
 
-                @include respond(big-phone) {
+                @include respond(small-tablet) {
                   font-size: 4rem;
                  }
             }

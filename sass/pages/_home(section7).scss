@@ -1,10 +1,11 @@
 .section7{
 background-image: url(Images/bg_mobile.jpg);
 background-size: cover;
+background-position: right;
 height: 55rem;
 margin-top: 10rem;
 
-@include respond(big-phone) {
+@include respond(small-tablet) {
     margin-top: 6rem;
     height: 45rem;
   }
@@ -13,7 +14,7 @@ margin-top: 10rem;
     padding: 10rem 10rem 0rem 10rem;
     width: 55%;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         padding: 5rem 5rem 0rem 5rem;
         width: 75%;
       }
@@ -25,7 +26,7 @@ margin-top: 10rem;
         color: $color-white;
         margin-bottom: 5rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             margin-bottom: 2rem;
           }
     }
@@ -35,7 +36,7 @@ margin-top: 10rem;
         color: $color-white;
         margin-bottom: 5rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             margin-bottom: 2rem;
           }
     }
@@ -45,7 +46,7 @@ margin-top: 10rem;
         color: $color-white;
         margin-bottom: 5rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             margin-bottom: 2rem;
             font-size: 2.6rem;
           }
@@ -54,7 +55,7 @@ margin-top: 10rem;
     &-4{
         width: 30%;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             width: 40%;
           }
     }

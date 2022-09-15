@@ -1,27 +1,23 @@
 .section3{
-    margin: 17rem 11rem 0rem 15rem ;
+    margin-top: 17rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     animation-name: moveInRight;
     animation-duration: 2s;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         flex-direction: column-reverse;
-        margin: 8rem 6rem 0rem 6rem ;
+        margin-top: 8rem;
+        height: 130rem;
     }
 
     &-word{
-        padding-top: 6rem;
-        padding-right: 4.1rem;
-        width: 50%;
+        width: 40%;
 
-        @include respond(big-phone) {
-            width: 100%;
-            padding-right: 0rem;
-        }
-
-        @include respond(tablet) {
+        @include respond(small-tablet) {
             width: 80%;
+            padding-right: 0rem;
         }
 
         &-1{
@@ -29,7 +25,7 @@
             font-size: 2rem;
             padding-bottom: 3rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
             }
     
@@ -39,7 +35,7 @@
             font-size: 5rem;
             padding-bottom: 3rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 5rem;
             }
         }
@@ -54,7 +50,7 @@
             font-size: 2.1rem;
             line-height: 2.7rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
                 line-height: 3.2rem;
              }
@@ -66,7 +62,11 @@
     &-img{
         animation-name: moveInLeftB;
         animation-duration: 2s;
+        width: 40%;
 
+        @include respond(small-tablet) {
+            width: 70%;
+         }
 
         &-item{
             width: 100%;

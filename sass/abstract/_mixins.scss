@@ -31,20 +31,31 @@ $breakpoint arguement choices
         @media (max-width: 23.4em) { @content };  //375px
     }
 
-    @if $breakpoint == big-phone {
+   @if $breakpoint == big-phone {
         @media (max-width: 26.56em) { @content };  //425px
+    }
+
+    @if $breakpoint == small-tablet {
+        @media (max-width: 39.31em) { @content };  //629px
     }
 
     @if $breakpoint == tablet {
         @media (max-width: 48em) { @content };  //768px
     }
 
+    /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+
     @if $breakpoint == small-laptop {
         @media (max-width: 64em) { @content };   //1024px
     }
 
+    /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/
+
     @if $breakpoint == big-desktop {
         @media (min-width: 160em) { @content };   //2560px
     }
-    
 }

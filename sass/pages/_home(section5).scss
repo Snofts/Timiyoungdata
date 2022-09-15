@@ -1,15 +1,18 @@
 .section5{
     padding-top: 8rem;
 
-    @include respond(big-phone) {
-       height: 250rem;
+    @include respond(small-tablet) {
+       height: 270rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
       }
 
     &-word{
         text-align: center;
 
-        @include respond(big-phone) {
-            padding: 0rem 6rem;
+        @include respond(small-tablet) {
+            width: 80%;
           }
 
         &-1{
@@ -17,7 +20,7 @@
             text-transform: uppercase;
             padding-bottom: 2rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3.5rem;
               }
         }
@@ -26,7 +29,7 @@
             font-size: 2rem;
             line-height: 3rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
                 line-height: 4rem;
               }
@@ -36,14 +39,18 @@
 
     &-figure{
         display: flex;
-        padding: 10rem 15rem 0rem 12rem;
+        justify-content: space-evenly;
+        align-content: center;
+        padding-top: 10rem;
+        padding-bottom: 0rem;
         height: 47rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             flex-direction: column;
             justify-content: space-between;
-            height: 220rem;
-            padding: 6rem 6rem 0rem 6rem;
+            width: 80%;
+            height: 250rem;
+            padding-top: 6rem;
           }
     }
 
@@ -51,11 +58,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 40%;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             width: 100%;
             justify-content: space-between;
-            height: 102rem;
+            height: 115rem;
           }
 
 
@@ -63,7 +71,7 @@
             display: flex;
             align-items: flex-start;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 flex-direction: column;
                 align-items: center;
               }
@@ -72,7 +80,7 @@
                 width: 17%;
                 padding-right: 3rem;
 
-                @include respond(big-phone) {
+                @include respond(small-tablet) {
                     width: 30%;    
                     }
             }
@@ -113,7 +121,7 @@
             flex-direction: column;
 
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 text-align: center;
               }
         }
@@ -124,7 +132,7 @@
             padding-right: 3rem;
             padding-bottom: 2rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 4rem;
               }
         }
@@ -135,7 +143,7 @@
             padding-right: 3rem;
 
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
               }
         }
@@ -145,19 +153,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 109rem;
+        width: 40%;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             width: 100%;
             justify-content: space-between;
-            height: 102rem;
+            height: 115rem;
           }
 
         &-2{
             display: flex;
             align-items: flex-start;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 flex-direction: column;
                 align-items: center;
               }
@@ -166,7 +174,7 @@
                 width: 18%;
                 padding-right: 3rem;
 
-                @include respond(big-phone) {
+                @include respond(small-tablet) {
                 width: 30%;    
                 }
             }
@@ -177,7 +185,7 @@
             flex-direction: column;
             align-items: space-between;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 text-align: center;
               }
         }
@@ -188,7 +196,7 @@
             padding-right: 2rem;
             padding-bottom: 2rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 4rem;
               }
         }
@@ -198,7 +206,7 @@
            padding-right: 3rem;
             font-size: 2rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
               }
         }

@@ -1,18 +1,32 @@
-* { 
-    margin: 0px;
-    padding: 0px;
+*,
+::after,
+::before { 
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: inherit;
 }
 
 html{
     font-size: 62.5%;
 
-
-    @include respond(small-laptop) {
-        font-size: 50%;
+    @include respond(medium-laptop) {
+        font-size: 62.5%;
     }
 
+
+    @include respond(small-laptop) {
+        font-size: 45%;
+    }
+
+    /*@include respond(smaller-laptop) {
+        font-size: 40%;
+    }*/
+
     @include respond(tablet) {
+        font-size: 36%;
+    }
+
+    @include respond(small-tablet) {
         font-size: 36%;
     }
 

@@ -1,23 +1,25 @@
 .section4{
     display: flex;
-    padding: 5rem 11rem 0rem 15rem;
+    justify-content: space-evenly;
+    padding-top: 5rem;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
        flex-direction: column;
-       padding: 5rem 6rem 0rem 6rem;
+       align-items: center;
+       padding-top: 5rem;
 
 
      }
 
     &-img{
-        width: 50%;
-        padding-right: 4.1rem;
+        width: 40%;
+        //padding-right: 4.1rem;
 
         animation-name: moveInRight;
         animation-duration: 2s;
 
-        @include respond(big-phone) {
-            width: 100%;
+        @include respond(small-tablet) {
+            width: 80%;
             padding-right: 0rem;
             align-items: center;
             padding-bottom: 5rem;
@@ -25,17 +27,17 @@
      
 
         &-item{
-            width: 95%;
+            width: 100%;
         }
     }
 
     &-word{
-        width: 50%;
+        width: 40%;
         animation-name: moveInLeft;
         animation-duration: 2s;
 
-        @include respond(big-phone) {
-            width: 100%; 
+        @include respond(small-tablet) {
+            width: 80%; 
           }
 
         &-1{
@@ -43,7 +45,7 @@
             color: $color-primary-light;
             padding-bottom: 5rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
                 padding-bottom: 2rem;
               }
@@ -55,7 +57,7 @@
             font-size: 5rem;
             padding-bottom: 5rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 padding-bottom: 2rem;
               }
         }
@@ -65,7 +67,7 @@
             line-height: 3rem;
             color: $color-primary-light;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
                 line-height: 4.5rem;
               }

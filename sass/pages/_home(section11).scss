@@ -8,9 +8,13 @@
     font-size: 2rem;
     color: $color-primary-light;
 
-    @include respond(big-phone) {
-        font-size: 2rem;
+    @include respond(small-tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 4rem;
         margin: 5rem 6rem 5rem 6rem;
+        text-align: center;
       }
 
     &-2{

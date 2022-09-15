@@ -1,14 +1,19 @@
 .section2{
     background-color: $color-grey-light;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     height: 77rem;
-    padding: 10rem 12rem 5rem 12rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    //padding: 10rem 12rem 5rem 12rem;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         height: 160rem;
-        padding: 8rem;
+        padding: 8rem 0rem;
      }
 
     &-img{
@@ -16,8 +21,8 @@
         animation-name: moveInRight;
         animation-duration: 2s;
 
-        @include respond(big-phone) {
-            width: 100%;
+        @include respond(small-tablet) {
+            width: 80%;
          }
 
 
@@ -31,13 +36,13 @@
     &-word{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
 
         animation-name: moveInLeft;
         animation-duration: 2s;
 
-        @include respond(big-phone) {
-            width: 100%;
+        @include respond(small-tablet) {
+            width: 80%;
          }
 
         &-1{
@@ -57,7 +62,7 @@
             font-size: 2.5rem;
             color: $color-primary-light;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
              }
         }

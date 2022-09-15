@@ -2,7 +2,7 @@
     margin-top: 5rem;
     padding-bottom: 5rem;
 
-    @include respond(big-phone) {
+    @include respond(small-tablet) {
         height: 220rem;
       }
 
@@ -30,7 +30,7 @@
         justify-content: flex-start;
         margin-left: 10rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
@@ -53,7 +53,7 @@
             margin-left: 5rem;
             padding-bottom: 3rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 width: 60%;
                 margin-left: 0rem;
               }
@@ -62,7 +62,7 @@
 
         &-logo{
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -80,7 +80,7 @@
             width: 80%;
             margin-bottom: 1rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 width: 60%;
                 align-self: center;
               }
@@ -96,7 +96,7 @@
             margin-bottom: 1rem;
             padding-bottom: 1rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 2.5rem;
               }
         }
@@ -107,7 +107,7 @@
             border-top: 0.1rem solid gray;
             padding-top: 1rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 2rem;
               }
         }
@@ -130,18 +130,19 @@
             margin-top: 3rem;
             font-size: 2rem;
 
-            @include respond(big-phone) {
+            @include respond(small-tablet) {
                 font-size: 3rem;
               }
         }
 
         &-btn a:link,
-        &-btn a:active{
+        &-btn a:visited{
             text-decoration: none;
+            background-color: $color-orange-medium;
         }
 
         &-btn a:hover,
-        &-btn a:visited{
+        &-btn a:active{
             text-decoration: none;
             background-color: $color-primary-light;
         }

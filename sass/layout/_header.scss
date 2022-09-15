@@ -4,30 +4,48 @@
     background-size: cover;
     overflow: hidden;
 
+    @include respond(tablet) {
+        height: 75vh;
+    }
+
+    @include respond(small-tablet) {
+        height: 95vh;
+    }
+
     @include respond(big-phone) {
-        height: 99vh;
+        height: 85vh;
+    }
+
+    @include respond(medium-phone) {
+        height: 75vh;
     }
 
     @include respond(small-phone) {
-        height: 79vh;
+        height: 60vh;
     }
 
     &-nav{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-content: center;
+        align-items: center;
         height: 7rem;
-        margin: 4rem 15rem 4rem 15rem;
+        //margin: 4rem 15rem 4rem 15rem;
+        margin:4rem 0rem;
 
-        @include respond(big-phone) {
+        @include respond(small-tablet) {
             flex-direction: column;
             align-items: center;
-            margin: 4rem 2rem 1rem 2rem;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
         }
 
         @include respond(tablet) {
             height: 9rem;
-            margin: 4rem 6rem 4rem 6rem;
+        }
+
+        @include respond(medium-laptop) {
+            margin: 2rem 4rem 2rem 4rem;
         }
     }
 
@@ -58,11 +76,20 @@
         list-style: none;
         font-size: 1.8rem;
 
+        @include respond(small-tablet) {
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
     }
 
     &-logo{
         font-size: 2.8rem;
         margin-top: -1rem;
+
+        @include respond(small-tablet) {
+            margin-bottom: 2rem;
+        }
 
         & a{
             text-decoration: none;
@@ -81,6 +108,10 @@
 
     & li:not(:last-child){
         margin-right: 3rem;
+
+        @include respond(small-tablet) {
+            margin-right: 0rem;
+        }
     }
 
 
@@ -95,11 +126,23 @@
 
     &-2{
         display: flex;
+        justify-content: space-evenly;
+        align-content: center;
         margin-top: 3.5rem;
-        margin-left: 15rem;
-        margin-right: 7rem;
         height: 76vh;
-        align-items: center;
+
+        @include respond(tablet) {
+            height: 50vh;
+        }
+
+        @include respond(small-tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 80vh;
+        }
+
+
 
         @include respond(big-phone) {
             flex-direction: column;
@@ -108,10 +151,27 @@
             margin-left: 8rem;
         }
 
+        @include respond(medium-phone) {
+            height: 55vh;
+        }
+
+        @include respond(small-phone) {
+            height: 50vh;
+        }
+
+        @include respond(medium-laptop) {
+            margin: 3.5rem 2em 0rem 4rem;
+        }
+
         &-1{
-            width: 50%;
+            width: 30%;
             animation-name: moveInRight;
             animation-duration: 5s;
+            align-self: center;
+
+            @include respond(small-tablet) {
+                width: 60%;
+            }
 
 
             @include respond(big-phone) {
@@ -150,22 +210,33 @@
         }
 
         &-img{
+            display: flex;
             height: 100%;
-            overflow: fill;
+            overflow: cover;
+            width: 30%;
 
             animation-name: moveInLeft;
             animation-duration: 5s;
+
+            @include respond(small-tablet) {
+                width: 50%;
+            }
+
+            @include respond(big-phone) {
+                width: 70%;
+            }
         }
 
         &-item{
             width: 100%;
+            align-self: center;
             
-            @include respond(big-phone) {
-                width: 70%;
+            @include respond(small-tablet) {
+                width: 100%;
                 align-self: center;
                 margin-top: 2rem;
-                margin-left: 10rem;
             }
+
         }
 
         &-logo{
