@@ -1797,10 +1797,59 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   background-color: #fff;
-  min-width: 40rem;
+  min-width: 40%;
   height: 80%;
   border-radius: 1rem;
-  text-align: center; }
+  text-align: center;
+  /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+  /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/
+  /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+  /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/
+  /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+  /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/
+  /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+  /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/
+  /*@if $breakpoint == smaller-laptop {
+        @media (max-width: 57em) { @content };   //912px
+    }*/
+  /*@if $breakpoint == medium-laptop {
+        @media (max-width: 76.87em) { @content };   //1230px
+    }*/ }
+  @media (max-width: 48em) {
+    .login-form {
+      font-size: 62.5%; } }
+  @media (max-width: 39.31em) {
+    .login-form {
+      font-size: 62.5%;
+      min-width: 50%; } }
+  @media (max-width: 26.56em) {
+    .login-form {
+      font-size: 62.5%;
+      min-width: 60%; } }
+  @media (max-width: 23.4em) {
+    .login-form {
+      font-size: 62.5%;
+      min-width: 70%; } }
+  @media (max-width: 20em) {
+    .login-form {
+      font-size: 62.5%;
+      min-width: 90%; } }
   .login-form-head {
     display: flex;
     flex-direction: column;

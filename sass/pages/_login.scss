@@ -13,10 +13,35 @@
     flex-direction: column;
     //flex-shrink: 4;
     background-color: $color-white;
-    min-width: 40rem;
+    min-width: 40%;
     height: 80%;
     border-radius: 1rem;
     text-align: center;
+
+
+    @include respond(tablet) {
+        font-size: 62.5%;
+    }
+
+    @include respond(small-tablet) {
+        font-size: 62.5%;
+        min-width: 50%;
+    }
+
+    @include respond(big-phone) {
+        font-size: 62.5%;
+        min-width: 60%;
+    }
+
+    @include respond(medium-phone) {
+        font-size: 62.5%;
+        min-width: 70%;
+    }
+
+    @include respond(small-phone) {
+        font-size: 62.5%;
+        min-width: 90%;
+    }
 
     &-head{
         display: flex;
@@ -80,13 +105,6 @@
         }
     }
 
-    &-item1{
-        
-    }
-
-    &-item2{
-        
-    }
 
     &-item3{
         display: flex;
